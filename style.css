@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  
+}
+
+section{
+  height: 1020px;
+  width: 480px;
+  
+  overflow: hidden;
+ 
+}
+
+header{
+  padding: 25px;
+  display: flex;
+  padding: 20px 10px;
+ 
+}
+
+
+.box{
+  display: flex;
+  border: 1px solid gray;
+  width: 90%;
+  border-radius: 30px;
+  padding: 12px 0px;
+  
+}
+
+nav{
+  
+  margin-right: 15px;
+  color: rgb(35, 2, 43);
+}
+
+nav > i{
+  font-size: 25px;
+  padding: 10px 5px 0 5px;
+  
+}
+
+.box > i{
+ color: rgb(35, 2, 43);
+ padding: 0px 0px 0px 15px;
+}
+
+.box > input{
+   width: 85%;
+   height: 100%;
+   margin: 0 0 0 10px;
+   border: none;
+   outline: none;
+}
+
+/* menu */
+.container{
+  width: 95%;
+  margin: 0 auto;
+ 
+  
+}
+
+.Areas{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 170px;
+  gap: 5px;
+  height: 170px;
+  
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  max-height: 170px;
+  
+}
+.menu > img{
+  object-fit: cover;
+  width: 100px;
+  margin-left: 15px;
+  
+}
+.menu > h4{
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/* Seccion de pedidos */
+
+.productos{
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  grid-template-rows: repeat(3, 220px);
+  margin-top: 15px;
+  max-width: 100%;
+  
+  
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f2f2f2
+  
+}
+
+.data > h4{
+  margin-left: 5px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.data > h3{
+  margin-left: 5px;
+  font-size: 14px;
+  color: green;
+  text-align: center;
+}
+
+.data > img{
+  object-fit: cover;
+  width: 100px;
+  margin-left: 10px;
+  
+}
+
+
+/* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
